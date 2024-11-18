@@ -1,3 +1,4 @@
+
 // Load content dynamically
 function loadPage(page) {
     const content = document.getElementById('content');
@@ -41,3 +42,4 @@ function closeImage() {
     const lightbox = document.getElementById("lightbox");
     lightbox.style.display = "none";
 }
+
