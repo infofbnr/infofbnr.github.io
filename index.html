@@ -7,25 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My personal website! (WIP)</h1>
-    <h2>Contact me through <a href="https://discord.com/users/639162871271653436" target="_blank" title="Discord Account">Discord</a></h2>
-    <div class="about-section">
-        <h4>About me</h4>
-        <p>I'm Manuel, a freelance Discord Bot Developer with 5 years of experience in discord.py. I specialize in creating custom bots for various needs, including moderation, games, APIs, and more. With a strong foundation in Python, I’m dedicated to delivering high-quality, tailored solutions for your Discord community. Feel free to message me directly on Discord if you have any questions.</p>
-    </div>
-    
-    <!-- Image Gallery with Descriptions -->
-    <div class="image-gallery">
-        <div class="image-item" onclick='showImage("img/Screenshot_1.png")'>Trivia Command</div>
-        <div class="image-item" onclick="showImage('img/Screenshot_2.png')">TicTacToe multiplayer</div>
-        <div class="image-item" onclick="showImage('img/Screenshot_3.png')">Typeracer</div>
-        <div class="image-item" onclick="showImage('img/Screenshot_4.png')">Memory game</div>
-    </div>
+    <header>
+        <h1>My Personal Website!</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="discord.html" class="nav-link">Discord Bot</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Lightbox for displaying full images -->
-    <div id="lightbox" class="lightbox" onclick="closeImage()">
-        <span class="close">&times;</span>
-        <img id="lightbox-img" src="" alt="Full Image">
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to My Personal Website!</h2>
+        <p>This is the home page. Click on the navigation links to explore more about my work.</p>
+    </section>
+
+    <!-- Discord Bot Section -->
+    <div class="about-section">
+        <h4>About Me</h4>
+        <p>Hello! I'm Manuel, a freelance developer with 5 years of experience. I specialize in Python (creating Discord Bots) and Web development. With a strong foundation in Python, I’m dedicated to delivering high-quality, tailored solutions for your Discord community. Feel free to message me directly on <a href="https://discord.com/users/639162871271653436" target="_blank">Discord</a> if you have any questions.</p>
     </div>
 
     <script src="script.js"></script>

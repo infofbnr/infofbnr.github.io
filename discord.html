@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Discord Bot Development</h2>
+    <p>I have been building discord bots since 2020, but with very limited functions.<br>Fast forward to 2024, I have expanded my knowledge in the past 4 years and I can<br>make very fun and customizable functions and commands!<br><Br>Here are some examples of a bot I have been working on recently!</p>
+        <!-- Image Gallery with Descriptions -->
+        <div class="image-gallery">
+            <div class="image-item" onclick='showImage("img/Screenshot_1.png")'>Trivia Command</div>
+            <div class="image-item" onclick="showImage('img/Screenshot_2.png')">TicTacToe multiplayer</div>
+            <div class="image-item" onclick="showImage('img/Screenshot_3.png')">Typeracer</div>
+            <div class="image-item" onclick="showImage('img/Screenshot_4.png')">Memory game</div>
+        </div>
+
+        <!-- Lightbox for displaying full images -->
+        <div id="lightbox" class="lightbox" onclick="closeImage()">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="" alt="Full Image">
+        </div>
+</body>
+</html>

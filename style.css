@@ -17,6 +17,40 @@ body {
     min-height: 100vh;
 }
 
+/* Header styling */
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #1e42e6;
+}
+
 /* About section styling */
 .about-section {
     max-width: 600px;
