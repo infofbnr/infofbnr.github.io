@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mano's Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mano's Portfolio</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="/about" class="nav-link">About</a></li>
+                <li><a href="/projects" class="nav-link">Projects</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Discord Bots Section -->
+    <section id="discord-bots">
+        <h2>Discord Bots</h2>
+        <p>I have been building Discord bots since 2020, creating fun and customizable commands. Below are some examples:</p>
+        <div class="image-gallery">
+            <div class="image-item" onclick='showImage("../img/Screenshot_1.png")'>Trivia Command</div>
+            <div class="image-item" onclick="showImage('../img/Screenshot_2.png')">TicTacToe Multiplayer</div>
+            <div class="image-item" onclick="showImage('../img/Screenshot_3.png')">Typeracer</div>
+            <div class="image-item" onclick="showImage('../img/Screenshot_4.png')">Memory Game</div>
+        </div>
+    </section>
+
+    <!-- Websites Section -->
+    <section id="websites">
+        <h2>Websites</h2>
+        <p>
+            I've been interested in web development at a young age, but only recently started to learn HTML, CSS, and JS.<br>
+            I'm eager to learn more as time goes on, but so far here are some of the websites I've made:<br>
+        </p>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Python lessons</h3>
+                <p>A fully functional online "python school" I made for my friends who were new to python and wanted to learn more.</p>
+                <a href="https://manopython.tech/" target="_blank" class="project-link">Visit Python Lessons</a>
+            </div>
+            <div class="project-item">
+                <h3>Sigmagram</h3>
+                <p>My online business selling Instagram and TikTok services, such as likes, views, followers.. etc.</p>
+                <a href="https://sigmagram.tech/" target="_blank" class="project-link">Visit Sigmagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Full Image">
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
