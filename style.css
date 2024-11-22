@@ -127,10 +127,11 @@ section p {
 /* Image Gallery */
 .image-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
+    gap: 20px; /* Adds space between the items */
     margin: 0 auto;
     max-width: 900px;
+    padding: 20px;
 }
 
 .image-item {
@@ -147,6 +148,7 @@ section p {
     background-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
 }
+
 
 /* Lightbox */
 .lightbox {
@@ -229,13 +231,13 @@ footer a {
 
 /* Project List */
 .project-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row */
     gap: 30px;
     max-width: 100%; /* Prevent overflow */
     margin: 0 auto;
     padding: 20px;
-    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    box-sizing: border-box;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -287,7 +289,24 @@ footer a {
 
 /* Responsive Fix for Smaller Screens */
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
     .project-list {
+        grid-template-columns: 1fr; /* Stack 1 button per row on mobile */
         padding: 10px;
     }
 
@@ -304,4 +323,8 @@ footer a {
         padding: 8px 10px;
         text-align: center;
     }
+    .image-gallery {
+        grid-template-columns: 1fr; /* Stack images in 1 column on smaller screens */
+    }
+
 }
