@@ -232,9 +232,11 @@ footer a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    max-width: 900px;
+    max-width: 100%; /* Prevent overflow */
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .project-item {
@@ -244,6 +246,7 @@ footer a {
     border-radius: 8px;
     text-align: left;
     transition: transform 0.3s, box-shadow 0.3s;
+    word-wrap: break-word; /* Ensure long text wraps */
 }
 
 .project-item:hover {
@@ -261,39 +264,29 @@ footer a {
     font-size: 1rem;
     color: #c9d1d9;
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .project-link {
+    display: inline-block; /* Prevent buttons from stretching horizontally */
     font-size: 1.1rem;
     color: #58a6ff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    padding: 10px 15px;
+    background: rgba(88, 166, 255, 0.1);
+    border: 1px solid #58a6ff;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
 }
 
 .project-link:hover {
-    color: #2ea043;
+    background: #58a6ff;
+    color: #0d1117;
 }
 
-/* Responsive Media Queries */
+/* Responsive Fix for Smaller Screens */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .navbar ul {
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .nav-link {
-        font-size: 1rem;
-    }
-
-    section {
-        padding: 40px 10px;
-    }
-
     .project-list {
         padding: 10px;
     }
@@ -304,5 +297,11 @@ footer a {
 
     .project-item p {
         font-size: 0.9rem;
+    }
+
+    .project-link {
+        font-size: 1rem;
+        padding: 8px 10px;
+        text-align: center;
     }
 }
