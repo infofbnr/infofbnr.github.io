@@ -8,7 +8,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, #0d1117, #161b22);
-    color: #c9d1d9;
+    color: #e1e4e8;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
@@ -98,8 +98,10 @@ header h1 {
 /* Section Styling */
 section {
     padding: 60px 20px;
+    margin-bottom: 40px; /* Add space between sections */
     text-align: center;
 }
+
 
 #discord-bots {
     background: #161b22;
@@ -127,15 +129,15 @@ section p {
 /* Image Gallery */
 .image-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for larger screens */
-    gap: 20px; /* Adds space between the items */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     margin: 0 auto;
-    max-width: 900px;
-    padding: 20px;
+    max-width: 1000px; /* Reduced max-width */
+    padding: 10px;
 }
 
 .image-item {
-    padding: 15px;
+    padding: 10px; /* Reduced padding */
     background: rgba(255, 255, 255, 0.1);
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -143,6 +145,7 @@ section p {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 
 .image-item:hover {
     background-color: rgba(255, 255, 255, 0.2);
@@ -281,7 +284,32 @@ footer a {
     border-radius: 8px;
     transition: background 0.3s, color 0.3s;
 }
+.acronym-container {
+    text-align: left;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 
+.acronym div {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.neon {
+    display: inline-block;
+    width: 2rem;
+    font-weight: bold;
+    color: #58a6ff;
+    text-shadow: 0 0 5px #58a6ff, 0 0 10px #58a6ff, 0 0 2px #58a6ff, 0 0 40px #58a6ff, 0 0 80px #58a6ff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.neon:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff;
+}
 .project-link:hover {
     background: #58a6ff;
     color: #0d1117;
@@ -306,8 +334,11 @@ footer a {
         padding: 40px 10px;
     }
     .project-list {
-        grid-template-columns: 1fr; /* Stack 1 button per row on mobile */
-        padding: 10px;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .project-item {
+        margin-bottom: 20px; /* Extra space between project items */
     }
 
     .project-item h3 {
