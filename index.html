@@ -1,40 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mano's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mano | Software Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Accent color for acronym letters */
+    .accent-letter {
+      color: #3b82f6; /* blue-500 */
+      font-weight: 700;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <h1>Mano's Portfolio</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/about" class="nav-link">About</a></li>
-                <li><a href="/projects" class="nav-link">Projects</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-900 text-gray-300 font-sans leading-relaxed min-h-screen flex flex-col">
+
+  <!-- Container -->
+  <div class="max-w-4xl mx-auto p-8 flex-grow flex flex-col">
+
+    <!-- Header / Hero -->
+    <header class="mb-12">
+      <h1 class="text-5xl font-extrabold mb-2 text-blue-500">Manuel “Mano” Hagopian</h1>
+      <p class="text-xl text-gray-400">Front-End Developer | Software Engineer | Problem Solver</p>
+      <p class="mt-4 max-w-lg text-gray-400">
+        Passionate about building clean, performant, and accessible web applications that solve real-world problems. Experienced in JavaScript, React, Tailwind CSS, and modern development workflows.
+      </p>
     </header>
 
-    <div class="acronym-container">
-        <div class="acronym">
-            <div><span class="neon">M</span>astery</div>
-            <div><span class="neon">A</span>dvancement</div>
-            <div><span class="neon">N</span>etworking</div>
-            <div><span class="neon">U</span>nderstanding</div>
-            <div><span class="neon">E</span>ngineering</div>
-            <div><span class="neon">L</span>ogic</div>
-        </div>
-    </div>
-    
-    
+    <!-- About Section -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-semibold border-b-2 border-blue-500 inline-block pb-1 mb-6">About Me</h2>
+      <p class="max-w-3xl text-gray-400">
+        I am a detail-oriented software engineer with a strong foundation in front-end development and UI/UX best practices. I take pride in writing clean code, learning new technologies quickly, and collaborating effectively within teams.
+      </p>
+    </section>
 
-    <footer>
-        <p>© 2024 Mano's Portfolio. Built with 💻 and ☕. <a href="https://discord.com/users/639162871271653436" target="_blank">Connect on Discord</a></p>
-    </footer>
+    <!-- Skills (Your Acronym) -->
+    <section class="mb-12">
+      <h2 class="text-3xl font-semibold border-b-2 border-blue-500 inline-block pb-1 mb-6">Skills & Values</h2>
+      <ul class="grid grid-cols-1 gap-x-12 gap-y-4 max-w-md text-gray-400">
+        <li><span class="accent-letter">M</span>astery — Deliver high-quality, well-tested code</li>
+        <li><span class="accent-letter">A</span>dvancement — Continuous learning & improvement</li>
+        <li><span class="accent-letter">N</span>etworking — Building connections & teamwork</li>
+        <li><span class="accent-letter">U</span>nderstanding — Empathy for users & stakeholders</li>
+        <li><span class="accent-letter">E</span>ngineering — Strong foundation in algorithms & architecture</li>
+        <li><span class="accent-letter">L</span>ogic — Problem-solving mindset & clean thinking</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="mb-12">
+    <h2 class="text-3xl font-semibold border-b-2 border-blue-500 inline-block pb-1 mb-6">Projects</h2>
+    <p class="max-w-3xl text-gray-400 mb-6">
+        Explore my full range of projects showcasing my skills in development, design, and problem-solving.
+    </p>
+    <a href="/projects" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md transition">
+        View All Projects
+    </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section>
+      <h2 class="text-3xl font-semibold border-b-2 border-blue-500 inline-block pb-1 mb-6">Contact Me</h2>
+      <p class="max-w-md text-gray-400 mb-4">
+        Feel free to reach out for job opportunities, collaborations, or just to say hi!
+      </p>
+      <a href="mailto:manuelhagopian961@gmail.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md transition">
+        Email Me
+      </a>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-500 text-center py-6 mt-auto border-t border-gray-700">
+    © 2025 Manuel Hagopian. Built with 💻 and ☕.
+  </footer>
+
 </body>
 </html>

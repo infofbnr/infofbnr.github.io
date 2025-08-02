@@ -1,100 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mano's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects | Manuel Hagopian</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <h1>Mano's Portfolio</h1>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/about" class="nav-link">About</a></li>
-                <li><a href="/projects" class="nav-link">Projects</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="bg-gray-900 text-gray-300 font-sans min-h-screen flex flex-col">
 
-    <!-- Discord Bots Section -->
-    <section id="discord-bots">
-        <h2>Discord Bots</h2>
-        <p>I have been building Discord bots since 2020, creating fun and customizable commands. Below are some examples:</p>
-        <div class="image-gallery">
-            <div class="image-item" onclick='showImage("../img/Screenshot_1.png")'>Trivia Command</div>
-            <div class="image-item" onclick="showImage('../img/Screenshot_2.png')">TicTacToe Multiplayer</div>
-            <div class="image-item" onclick="showImage('../img/Screenshot_3.png')">Typeracer</div>
-            <div class="image-item" onclick="showImage('../img/Screenshot_4.png')">Memory Game</div>
-        </div>
-    </section>
+  <!-- Header -->
+  <header class="bg-gray-800 border-b border-gray-700">
+    <nav class="max-w-4xl mx-auto p-6 flex justify-between items-center">
+      <a href="/" class="text-blue-500 text-2xl font-extrabold hover:underline">Mano's Portfolio</a>
+      <ul class="flex space-x-8 text-gray-400">
+        <li><a href="/" class="hover:text-blue-400">Home</a></li>
+        <li><a href="/projects" class="text-blue-500 font-semibold">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Websites Section -->
-    <section id="websites">
-        <h2>Websites</h2>
-        <p>
-            I've been interested in web development at a young age, but only recently started to learn HTML, CSS, and JS.<br>
-            I'm eager to learn more as time goes on, but so far here are some of the websites I've made:<br>
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto p-8 flex-grow">
+    <h1 class="text-4xl font-extrabold text-blue-500 mb-8">Projects</h1>
+
+    <p class="mb-8 text-gray-400 max-w-3xl">
+      A collection of my work demonstrating my skills in web development, bot creation, and creative projects. Click on each project to visit the live site or learn more.
+    </p>
+
+    <section class="grid gap-8 grid-cols-1 sm:grid-cols-2">
+      
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Python Lessons</h2>
+        <p class="text-gray-400 mb-4">
+          A fully functional online "python school" made for my friends who wanted to learn Python from scratch.
         </p>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>Python lessons</h3>
-                <p>A fully functional online "python school" I made for my friends who were new to python and wanted to learn more.</p>
-                <a href="https://manopython.tech/" target="_blank" class="project-link">Visit Python Lessons</a>
-            </div>
-            <div class="project-item">
-                <h3>Sigmagram</h3>
-                <p>My online business selling Instagram and TikTok services, such as likes, views, followers.. etc.</p>
-                <a href="https://sigmagram.tech/" target="_blank" class="project-link">Visit Sigmagram</a>
-            </div>
-            <div class="project-item">
-                <h3>English Endgame</h3>
-                <p>English endgame is a game my teacher taught me in school, and I decided to turn it into a website!</p>
-                <a href="https://englishendgame.xyz/" target="_blank" class="project-link">Visit English Endgame</a>
-            </div>
-            <div class="project-item">
-                <h3>Armenian Endgame</h3>
-                <p>Armenian endgame is the same game as English endgame, but as you guessed it, in Armenian.</p>
-                <a href="https://armenianendgame.xyz/" target="_blank" class="project-link">Visit Armenian Endgame</a>
-            </div>
-            <div class="project-item">
-                <h3>Nareg Tekelian</h3>
-                <p>A website made for one of my friends. Includes a paragraph about them, their hobbies, and how to contact them. There's also a gallery of images of them</p>
-                <a href="https://naregtekelian.info/" target="_blank" class="project-link">Visit his website</a>
-            </div>
-            <div class="project-item">
-                <h3>Elena Hovaguimian</h3>
-                <p>A website also for one of my friends. Contains the same things as Nareg's website. Difference is the font and theme.</p>
-                <a href="https://elenahovaguimian.info/" target="_blank" class="project-link">Visit her website</a>
-            </div>
-            <div class="project-item">
-                <h3>Brain Rot Soundboard</h3>
-                <p>Really one of my most basic websites, just a soundboard for brain rot.</p>
-                <a href="https://brain-rot.lol/" target="_blank" class="project-link">Visit Brain Rot Soundboard</a>
-            </div>
-            <div class="project-item">
-                <h3>Hay Shor</h3>
-                <p>Probably a very risky website, basically people can spread rumors and gossip about people anonymously. So far I haven't been in trouble for it.</p>
-                <a href="https://hayshor.blog/" target="_blank" class="project-link">Visit Hay Shor</a>
-            </div>
-            <div class="project-item">
-                <h3>Apology Generator</h3>
-                <p>Generates an apology based on some fun prompts for why you have to apologize to someone.</p>
-                <a href="https://mano.is-a.dev/apology/" target="_blank" class="project-link">Visit Apology Generator</a>
-            </div>
-        </div>
+        <a href="https://manopython.tech/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Python Lessons &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Sigmagram</h2>
+        <p class="text-gray-400 mb-4">
+          An online business selling Instagram and TikTok engagement services including likes, views, and followers.
+        </p>
+        <a href="https://sigmagram.tech/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Sigmagram &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">English Endgame</h2>
+        <p class="text-gray-400 mb-4">
+          A web adaptation of the word game “Endgame” I learned in school, designed to be fun and engaging.
+        </p>
+        <a href="https://englishendgame.xyz/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit English Endgame &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Armenian Endgame</h2>
+        <p class="text-gray-400 mb-4">
+          The Armenian language version of the Endgame word game, with full features and native language support.
+        </p>
+        <a href="https://armenianendgame.xyz/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Armenian Endgame &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Nareg Tekelian Website</h2>
+        <p class="text-gray-400 mb-4">
+          A personal site for a friend including biography, hobbies, and an image gallery.
+        </p>
+        <a href="https://naregtekelian.info/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Nareg's Website &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Elena Hovaguimian Website</h2>
+        <p class="text-gray-400 mb-4">
+          A personal site for a friend with a unique font and theme, similar in structure to Nareg’s site.
+        </p>
+        <a href="https://elenahovaguimian.info/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Elena's Website &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Brain Rot Soundboard</h2>
+        <p class="text-gray-400 mb-4">
+          A simple, fun soundboard website designed for quick brain rot moments.
+        </p>
+        <a href="https://brain-rot.lol/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Brain Rot Soundboard &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Hay Shor (Now Called HayChene)</h2>
+        <p class="text-gray-400 mb-4">
+          A website where users can anonymously spread rumors and gossip. So far, no trouble! (Edit: Got into trouble, now called HayChene)
+        </p>
+        <a href="https://hayshor.blog/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Hay Shor &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Apology Generator</h2>
+        <p class="text-gray-400 mb-4">
+          Generates personalized apologies based on fun user prompts.
+        </p>
+        <a href="https://mano.is-a.dev/apology/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Apology Generator &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Daily Bible Verses</h2>
+        <p class="text-gray-400 mb-4">
+          Provides a new verse from the Bible each day, updated automatically.
+        </p>
+        <a href="https://dailyverses.site/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Daily Bible Verses &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Gibberish Generator</h2>
+        <p class="text-gray-400 mb-4">
+          Generates complete, utter gibberish with AI assistance.
+        </p>
+        <a href="https://mano.is-a.dev/gibberish/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Gibberish Generator &rarr;
+        </a>
+      </article>
+
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">MajorAI</h2>
+        <p class="text-gray-400 mb-4">
+          A chatbot helping users explore and choose university majors based on their interests.
+        </p>
+        <a href="https://major-ai.fun/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit MajorAI &rarr;
+        </a>
+      </article>
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">MUNAI</h2>
+        <p class="text-gray-400 mb-4">
+          A website designed to help users improve their MUN skills through interactive exercises and resources.
+        </p>
+        <a href="https://mun-ai.pro/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit MajorAI &rarr;
+        </a>
+      </article>
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Don't Pick the Poisoned</h2>
+        <p class="text-gray-400 mb-4">
+          A fun game where 2 players pick a candy each, which would be "poisoned". Then they take turns picking candies until one of them picks a poisoned candy.
+        </p>
+        <a href="https://mano.is-a.dev/dptp/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Don't Pick the Poisoned &rarr;
+        </a>
+      </article>
+      <article class="bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+        <h2 class="text-2xl font-semibold text-blue-400 mb-2">Digital Wallet</h2>
+        <p class="text-gray-400 mb-4">
+          As the name suggests, some sort of wallet that tracks your expenses and income, and also gives you a summary of your daily expenses and more. The website tracks your money in both USD and LBP.
+        </p>
+        <a href="https://mano.is-a.dev/money/" target="_blank" class="inline-block text-blue-400 font-semibold hover:underline">
+          Visit Digital Wallet &rarr;
+        </a>
+      </article>
     </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-800 border-t border-gray-700 text-center py-6 text-gray-500">
+    © 2025 Manuel Hagopian. Built with 💻 and ☕.
+  </footer>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" onclick="closeImage()">
-        <span class="close">&times;</span>
-        <img id="lightbox-img" src="" alt="Full Image">
-    </div>
-
-    <script src="../script.js"></script>
 </body>
 </html>
